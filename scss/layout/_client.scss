@@ -1,0 +1,42 @@
+.client__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients__link {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}
