@@ -1,12 +1,9 @@
 .about {
   padding-bottom: 0;
 }
-.about__list {
-  display: flex;
-  gap: 30px;
-}
-.about__item {
-  width: 270px;
+
+.about__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about__icon {
@@ -36,6 +33,7 @@
   color: var(--color-title);
 
   margin-bottom: 10px;
+  text-align: center;
 }
 .about__subtitle {
   font-size: 14px;

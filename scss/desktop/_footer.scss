@@ -2,10 +2,12 @@
   background-color: var(--background-color-basic);
   padding: 60px 0;
 }
-// .footer {
-//   display: flex;
-//   align-items: baseline;
-// }
+.footer {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .section__logo {
   color: var(--color-white);
@@ -63,11 +65,13 @@
   margin-bottom: 20px;
 }
 
-// .form {
-//   display: flex;
-//   gap: 12px;
-//   align-items: center;
-// }
+.form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
 .form__email {
   font-size: 16px;
   line-height: 1.3;
@@ -89,14 +93,18 @@
   padding-bottom: 15px;
 }
 .form__btn {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  // display: flex;
-  // align-items: center;
+
   max-height: 50px;
   min-width: 200px;
-  // justify-content: space-between;
+
   letter-spacing: 0.06em;
   color: var(--color-white);
   background-color: var(--color-accent);

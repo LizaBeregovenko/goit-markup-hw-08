@@ -1,0 +1,15 @@
+.client__title {
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}

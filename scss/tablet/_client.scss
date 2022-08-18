@@ -1,0 +1,8 @@
+.clients__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

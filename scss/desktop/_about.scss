@@ -1,0 +1,11 @@
+.about__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+  }
+}
+.about__item {
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}

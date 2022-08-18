@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+@import './utils/breakpoints';
 
 // base styles
 @import './base/base';
@@ -17,7 +18,7 @@
 @import './layout/nav';
 @import './layout/hero';
 @import './layout/about';
-@import './layout/work';
+// @import './layout/work';
 @import './layout/team';
 @import './layout/client';
 @import './layout/footer';
@@ -25,3 +26,5 @@
 @import './layout/portfolio-card';
 @import './layout/backdrop';
 @import './layout/modal';
+@import './tablet/index';
+@import './desktop/index';

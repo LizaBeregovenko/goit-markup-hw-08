@@ -1,6 +1,8 @@
-// .nav {
-
-// }
+.nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
 
 .logo {
   font-weight: 700;
@@ -25,6 +27,10 @@
   cursor: pointer;
   font-family: inherit;
   color: var(--color-title);
+
+  display: flex;
+
+  gap: 50px;
 }
 
 .nav__link {
@@ -68,6 +74,10 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-title);
+
+  display: flex;
+  gap: 50px;
+  align-items: baseline;
 }
 .nav__icon-tel,
 .nav__icon-mail {
@@ -80,6 +90,8 @@
   color: var(--color-text);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -96,6 +108,8 @@
   color: var(--color-text);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   transition-property: color;
   transition-duration: 250ms;

@@ -1,0 +1,62 @@
+.portfolio-list {
+  display: flex;
+  gap: 8px;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+  text-decoration: none;
+  background-color: var(--background-color-team);
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-filter.btn-filter.current {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-cards-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-title);
+
+  margin-bottom: 4px;
+}
+.portfolio-cards-text {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: inherit;
+}
