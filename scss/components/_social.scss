@@ -1,5 +1,9 @@
 .social {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 .social__title {
   font-style: normal;

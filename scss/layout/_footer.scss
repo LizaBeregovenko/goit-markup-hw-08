@@ -1,20 +1,12 @@
 .section__footer {
   background-color: var(--background-color-basic);
   padding: 60px 0;
-}
-// .footer {
-//   display: flex;
-//   align-items: baseline;
-// }
-
-.section__logo {
-  color: var(--color-white);
-  margin-bottom: 20px;
-  display: inline-block;
+  text-align: center;
 }
 
 .section__address {
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 .section__list {
@@ -63,11 +55,6 @@
   margin-bottom: 20px;
 }
 
-// .form {
-//   display: flex;
-//   gap: 12px;
-//   align-items: center;
-// }
 .form__email {
   font-size: 16px;
   line-height: 1.3;
@@ -80,23 +67,28 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  min-width: 358px;
+  min-width: 100%;
   min-height: 50px;
   outline: transparent;
 
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  margin-bottom: 20px;
 }
 .form__btn {
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
   max-height: 50px;
   min-width: 200px;
-  // justify-content: space-between;
+  justify-content: space-between;
   letter-spacing: 0.06em;
   color: var(--color-white);
   background-color: var(--color-accent);
