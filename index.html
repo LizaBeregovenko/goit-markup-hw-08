@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Головна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +26,14 @@
     <!--Верхня лінія-->
     <header class="header header--no-transparency" data-header>
       <div class="container header__container">
+        <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
-          <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
           <ul class="nav__list">
             <li>
               <a class="nav__link nav__link--current" href="./index.html">Студія</a>
@@ -179,8 +185,8 @@
                 class="team__img"
                 src="./images/our_team/img1.jpg"
                 alt="Чоловік"
-                height="260"
-                width="270"
+                height="460"
+                width="100%"
               />
               <div class="team__card">
                 <h3 class="team__item-title">Ігор Дем'яненко</h3>
@@ -246,8 +252,8 @@
                 class="team__img"
                 src="./images/our_team/img2.jpg"
                 alt="Жінка"
-                height="260"
-                width="270"
+                height="460"
+                width="100%"
               />
               <div class="team__card">
                 <h3 class="team__item-title">Ольга Рєпіна</h3>
@@ -313,8 +319,8 @@
                 class="team__img"
                 src="./images/our_team/img3.jpg"
                 alt="Чоловік"
-                height="260"
-                width="270"
+                height="460"
+                width="100%"
               />
               <div class="team__card">
                 <h3 class="team__item-title">Микола Тарасов</h3>
@@ -380,8 +386,8 @@
                 class="team__img"
                 src="./images/our_team/img4.jpg"
                 alt="Чоловік"
-                height="260"
-                width="270"
+                height="460"
+                width="100%"
               />
               <div class="team__card">
                 <h3 class="team__item-title">Михайло Єрмаков</h3>
@@ -447,7 +453,7 @@
       </section>
       <!-- секція клієнти -->
       <section class="client section">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="client__title">Постійні клієнти</h2>
           <div class="client__group">
             <ul class="clients__list">
@@ -670,6 +676,41 @@
       </div>
     </div>
 
+    <!-- Мобільне меню -->
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn menu-btn-close" type="button" data-menu-close>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="mobile-list">
+          <li class="mobile-item">
+            <a class="mobile_link mobile_link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-item"><a class="mobile_link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="mobile-item"><a class="mobile_link" href="./">Контакти</a></li>
+        </ul>
+        <ul class="mobile-list">
+          <li class="mobile-item">
+            <a class="mobile_link-contact mobile_link-tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-item">
+            <a class="mobile_link-contact mobile_link-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-list mobile-list-social">
+          <li class="mobile-item-social"><a class="mobile_link-social" href="./">Instagram</a></li>
+          <li class="mobile-item-social"><a class="mobile_link-social" href="./">Twitter</a></li>
+          <li class="mobile-item-social"><a class="mobile_link-social" href="./">Facebook</a></li>
+          <li class="mobile-item-social"><a class="mobile_link-social" href="./">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Підключення скриптів -->
     <script src="./js/modal.js"></script>
 

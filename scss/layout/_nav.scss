@@ -1,6 +1,8 @@
-// .nav {
-
-// }
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 
 .nav__list {
   font-weight: 500;
@@ -53,6 +55,10 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-title);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .nav__icon-tel,
 .nav__icon-mail {

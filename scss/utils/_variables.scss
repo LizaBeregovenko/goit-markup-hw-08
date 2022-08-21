@@ -1,19 +1,20 @@
 :root {
-    /* Кольори */
-    --color-text: #757575;
-    --color-title: #212121;
-    --color-title2: #000;
-    --color-white: #fff;
-    --color-accent: #2196f3;
+  /* Кольори */
+  --color-text: #757575;
+  --color-title: #212121;
+  --color-title2: #000;
+  --color-white: #fff;
+  --color-accent: #2196f3;
 
-    /* кольори фону */
-    --background-color-basic: #2f303a;
-    --background-color-team: #f5f4fa;
+  /* кольори фону */
+  --background-color-basic: #2f303a;
+  --background-color-team: #f5f4fa;
 
-    /* Шрифти */
-    --font-logo: 'Raleway', sans-serif;
+  /* Шрифти */
+  --font-logo: 'Raleway', sans-serif;
 
-    /* для портфоліо */
-    --item: 3;
-    --indent: 30px;
+  /* для портфоліо */
+  --item: 3;
+  --indent: 30px;
+  --anim-fast: 300ms ease-in-out;
 }
