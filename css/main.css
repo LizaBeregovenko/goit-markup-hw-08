@@ -69,8 +69,6 @@ p {
 }
 
 .container {
-  outline: 1px solid red;
-  outline-offset: -1px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
