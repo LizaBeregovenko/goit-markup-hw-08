@@ -3,6 +3,12 @@
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+  // @media screen and (min-width: $desktop) {
+  //   flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+  // }
 }
 .portfolio-filter {
   font-family: inherit;

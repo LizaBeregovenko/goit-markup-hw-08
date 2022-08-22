@@ -15,8 +15,6 @@
 }
 
 .header__container {
-  @media screen and (max-width: $tablet) and (max-width: $desktop) {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 }

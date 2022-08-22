@@ -1,12 +1,33 @@
 .section__footer {
   background-color: var(--background-color-basic);
   padding: 60px 0;
-  text-align: center;
 }
+.footer {
+  @media screen and (max-width: $mobile) {
+    display: block;
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
+    justify-content: space-around;
+
+    text-align: left;
+  }
+}
 .section__address {
   font-style: normal;
   margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+  }
 }
 
 .section__list {
@@ -41,7 +62,17 @@
 }
 
 .subscribe {
-  margin-left: auto;
+  margin: auto;
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 15px;
+    margin-right: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 .subscribe__text {
   font-style: normal;
@@ -54,7 +85,24 @@
 
   margin-bottom: 20px;
 }
+.form {
+  display: flex;
+  flex-wrap: wrap;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 12px;
+
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+  }
+}
 .form__email {
   font-size: 16px;
   line-height: 1.3;
@@ -68,7 +116,7 @@
   border-radius: 4px;
 
   min-width: 100%;
-  min-height: 50px;
+  max-height: 50px;
   outline: transparent;
 
   padding-left: 16px;
@@ -86,6 +134,7 @@
   line-height: 1.8;
   display: flex;
   align-items: center;
+
   max-height: 50px;
   min-width: 200px;
   justify-content: space-between;
