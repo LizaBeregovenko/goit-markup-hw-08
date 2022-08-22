@@ -1120,6 +1120,11 @@ p {
         flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1199px) {
+  .form {
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form {
     display: -webkit-box;
@@ -1151,6 +1156,11 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .form__email {
+    width: 358px;
+  }
 }
 
 .form__btn {
@@ -1434,7 +1444,7 @@ p {
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms, -webkit-transform 400ms ease-in-out 200ms;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
@@ -1545,7 +1555,7 @@ p {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-form-input {
     width: 448px;
   }
@@ -1589,7 +1599,7 @@ p {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-form-textarea {
     min-width: 448px;
   }
@@ -1613,9 +1623,9 @@ p {
           align-items: center;
   gap: 8px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-checkbox {
-    width: auto;
+    min-width: 448px;
   }
 }
 
@@ -1652,7 +1662,7 @@ p {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-checkbox-label {
     font-size: 14px;
     line-height: 1.7;
@@ -1668,7 +1678,7 @@ p {
   text-decoration: underline;
   color: var(--color-accent);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-form-link {
     font-size: 14px;
     line-height: 1.7;

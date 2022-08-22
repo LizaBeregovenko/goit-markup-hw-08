@@ -97,6 +97,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and(max-width: 1199px) {
+    max-width: 450px;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     gap: 12px;
@@ -128,7 +131,12 @@
   padding-bottom: 15px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
 }
+
 .form__btn {
   margin-left: auto;
   margin-right: auto;

@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     min-height: 581px;
   }
@@ -101,7 +101,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: 448px;
   }
 }
@@ -142,7 +142,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     min-width: 448px;
   }
 }
@@ -159,8 +159,8 @@
   align-items: center;
   gap: 8px;
 
-  @media screen and (max-width: $desktop) {
-    width: auto;
+  @media screen and (min-width: $desktop) {
+    min-width: 448px;
   }
 }
 .form-checkbox-icon {
@@ -188,7 +188,8 @@
   color: var(--color-text);
 
   user-select: none;
-  @media screen and (max-width: $desktop) {
+
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.7;
   }
@@ -203,7 +204,7 @@
   text-decoration: underline;
   color: var(--color-accent);
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.7;
   }
