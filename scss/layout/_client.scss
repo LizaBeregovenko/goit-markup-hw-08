@@ -37,7 +37,7 @@
 
 .clients__link {
   height: 92px;
-  width: 210px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -54,9 +54,6 @@
   &:focus {
     border-color: var(--color-accent);
     color: var(--color-accent);
-  }
-  @media screen and (min-width: $desktop) {
-    width: 170px;
   }
 }
 

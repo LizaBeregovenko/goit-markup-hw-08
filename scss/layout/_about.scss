@@ -1,5 +1,7 @@
 .about {
-  padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 .about__list {
   display: flex;
@@ -48,7 +50,8 @@
   color: var(--color-title);
   text-align: left;
   margin-bottom: 10px;
-  @media screen and (min-width: $mobile) {
+
+  @media screen and (max-width: $mobile) {
     text-align: center;
   }
 }

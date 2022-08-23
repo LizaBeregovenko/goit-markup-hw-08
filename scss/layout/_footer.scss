@@ -20,17 +20,18 @@
   }
   @media screen and (min-width: $desktop) {
     align-items: baseline;
-    justify-content: space-around;
-    gap: 70px;
+    justify-content: flex-start;
     text-align: left;
   }
 }
 .section__address {
   font-style: normal;
-  margin-bottom: 60px;
-
+  margin-right: 0;
   @media screen and (min-width: $tablet) {
     margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
   }
 }
 
@@ -65,19 +66,15 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-// .subscribe {
-//   margin: auto;
-//   @media screen and (min-width: $tablet) {
-//     margin-right: 0;
-//     margin-left: 0;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     padding-top: 15px;
-//     margin-right: 93px;
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-//   }
-// }
+.subscribe {
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 .subscribe__text {
   font-style: normal;
   font-weight: 700;
@@ -104,7 +101,7 @@
     display: flex;
     gap: 12px;
 
-    width: 358px;
+    width: 570px;
     margin-right: 12px;
     margin-bottom: 0;
     flex-wrap: nowrap;

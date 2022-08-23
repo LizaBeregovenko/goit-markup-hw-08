@@ -60,8 +60,8 @@
 .nav__list-contact {
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 12px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-title);
   @media screen and (max-width: $mobile) {
@@ -79,6 +79,9 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+
+    font-size: 14px;
+    line-height: 1.1;
   }
 }
 
@@ -87,7 +90,19 @@
   fill: currentColor;
   margin-right: 10px;
 }
+.nav__icon-tel {
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+  }
+}
 
+.nav__icon-mail {
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
+}
 .nav__link-mail {
   color: var(--color-text);
   padding-top: 21px;
